@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-07-04T11:21:58.135344+00:00",
+  "symbol": "HYPE-USDT-SWAP",
+  "source": "OKX",
+  "ticker": {},
+  "timeframes": {
+    "1m": {
+      "candles": [],
+      "indicators": {}
+    },
+    "5m": {
+      "candles": [],
+      "indicators": {}
+    },
+    "15m": {
+      "candles": [],
+      "indicators": {}
+    },
+    "1h": {
+      "candles": [],
+      "indicators": {}
+    }
+  },
+  "order_book_summary": {},
+  "trades_summary": {},
+  "funding": {},
+  "open_interest": {},
+  "account": {},
+  "positions": [],
+  "risk_config": {
+    "account_equity": 100,
+    "max_loss_per_trade": 2,
+    "max_daily_loss": 5,
+    "leverage_cap": 15,
+    "preferred_leverage": 10,
+    "margin_mode": "isolated"
+  },
+  "risk_template": {
+    "status": "template_only",
+    "message": "Provide entry_price and stop_price to calculate position size.",
+    "formula": {
+      "stop_distance_pct": "abs(entry_price - stop_price) / entry_price",
+      "max_notional": "max_loss_usdt / stop_distance_pct",
+      "required_margin": "max_notional / leverage",
+      "estimated_loss": "max_notional * stop_distance_pct"
+    }
+  },
+  "missing_data": [
+    "ticker: missing (OKX request failed for /api/v5/market/ticker: <urlopen error Tunnel connection failed: 403 Forbidden>)",
+    "1m candles: missing (OKX request failed for /api/v5/market/candles: <urlopen error Tunnel connection failed: 403 Forbidden>)",
+    "5m candles: missing (OKX request failed for /api/v5/market/candles: <urlopen error Tunnel connection failed: 403 Forbidden>)",
+    "15m candles: missing (OKX request failed for /api/v5/market/candles: <urlopen error Tunnel connection failed: 403 Forbidden>)",
+    "1h candles: missing (OKX request failed for /api/v5/market/candles: <urlopen error Tunnel connection failed: 403 Forbidden>)",
+    "order book: missing (OKX request failed for /api/v5/market/books: <urlopen error Tunnel connection failed: 403 Forbidden>)",
+    "recent trades: missing (OKX request failed for /api/v5/market/trades: <urlopen error Tunnel connection failed: 403 Forbidden>)",
+    "funding rate: missing (OKX request failed for /api/v5/public/funding-rate: <urlopen error Tunnel connection failed: 403 Forbidden>)",
+    "open interest: missing (OKX request failed for /api/v5/public/open-interest: <urlopen error Tunnel connection failed: 403 Forbidden>)",
+    "账户数据：缺失，未配置 API Key。",
+    "Liquidation heatmap: missing",
+    "Global CVD: missing",
+    "Cross-exchange long/short ratio: missing",
+    "External liquidation map: missing"
+  ]
+}
