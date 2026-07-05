@@ -1,0 +1,25 @@
+symbol: HYPE-USDT-SWAP
+source: OKX
+output_dir: market_data_collector/output
+
+data_source_priority:
+  - okx_rest
+  - ccxt
+
+collection:
+  candle_limit: 180
+  order_book_depth: 20
+  trades_limit: 100
+  timeframes:
+    1m: 1m
+    5m: 5m
+    15m: 15m
+    1h: 1H
+
+risk:
+  account_equity: 100
+  max_loss_per_trade: 2
+  max_daily_loss: 5
+  leverage_cap: 15
+  preferred_leverage: 10
+  margin_mode: isolated

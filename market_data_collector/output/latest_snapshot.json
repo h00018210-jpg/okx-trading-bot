@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-07-04T14:38:07.319890+00:00",
+  "symbol": "HYPE-USDT-SWAP",
+  "source": "OKX",
+  "ticker": {},
+  "timeframes": {
+    "1m": {
+      "candles": [],
+      "indicators": {}
+    },
+    "5m": {
+      "candles": [],
+      "indicators": {}
+    },
+    "15m": {
+      "candles": [],
+      "indicators": {}
+    },
+    "1h": {
+      "candles": [],
+      "indicators": {}
+    }
+  },
+  "order_book_summary": {},
+  "trades_summary": {},
+  "funding": {},
+  "open_interest": {},
+  "account": {},
+  "positions": [],
+  "risk_config": {
+    "account_equity": 100,
+    "max_loss_per_trade": 2,
+    "max_daily_loss": 5,
+    "leverage_cap": 15,
+    "preferred_leverage": 10,
+    "margin_mode": "isolated"
+  },
+  "risk_template": {
+    "status": "template_only",
+    "message": "Provide entry_price and stop_price to calculate position size.",
+    "formula": {
+      "stop_distance_pct": "abs(entry_price - stop_price) / entry_price",
+      "max_notional": "max_loss_usdt / stop_distance_pct",
+      "required_margin": "max_notional / leverage",
+      "estimated_loss": "max_notional * stop_distance_pct"
+    }
+  },
+  "missing_data": [
+    "ticker via okx_rest: missing (source=okx_rest; endpoint=/api/v5/market/ticker; params={'instId': 'HYPE-USDT-SWAP'}; status_code=None; response_body=; error=Python package 'requests' is not installed)",
+    "ticker via ccxt: missing (source=ccxt; endpoint=init; params={}; status_code=None; response_body=; error=Python package 'ccxt' is not installed)",
+    "1m candles via okx_rest: missing (source=okx_rest; endpoint=/api/v5/market/candles; params={'instId': 'HYPE-USDT-SWAP', 'bar': '1m', 'limit': 180}; status_code=None; response_body=; error=Python package 'requests' is not installed)",
+    "1m candles via ccxt: missing (source=ccxt; endpoint=init; params={}; status_code=None; response_body=; error=Python package 'ccxt' is not installed)",
+    "5m candles via okx_rest: missing (source=okx_rest; endpoint=/api/v5/market/candles; params={'instId': 'HYPE-USDT-SWAP', 'bar': '5m', 'limit': 180}; status_code=None; response_body=; error=Python package 'requests' is not installed)",
+    "5m candles via ccxt: missing (source=ccxt; endpoint=init; params={}; status_code=None; response_body=; error=Python package 'ccxt' is not installed)",
+    "15m candles via okx_rest: missing (source=okx_rest; endpoint=/api/v5/market/candles; params={'instId': 'HYPE-USDT-SWAP', 'bar': '15m', 'limit': 180}; status_code=None; response_body=; error=Python package 'requests' is not installed)",
+    "15m candles via ccxt: missing (source=ccxt; endpoint=init; params={}; status_code=None; response_body=; error=Python package 'ccxt' is not installed)",
+    "1h candles via okx_rest: missing (source=okx_rest; endpoint=/api/v5/market/candles; params={'instId': 'HYPE-USDT-SWAP', 'bar': '1H', 'limit': 180}; status_code=None; response_body=; error=Python package 'requests' is not installed)",
+    "1h candles via ccxt: missing (source=ccxt; endpoint=init; params={}; status_code=None; response_body=; error=Python package 'ccxt' is not installed)",
+    "order book via okx_rest: missing (source=okx_rest; endpoint=/api/v5/market/books; params={'instId': 'HYPE-USDT-SWAP', 'sz': 20}; status_code=None; response_body=; error=Python package 'requests' is not installed)",
+    "order book via ccxt: missing (source=ccxt; endpoint=init; params={}; status_code=None; response_body=; error=Python package 'ccxt' is not installed)",
+    "recent trades via okx_rest: missing (source=okx_rest; endpoint=/api/v5/market/trades; params={'instId': 'HYPE-USDT-SWAP', 'limit': 100}; status_code=None; response_body=; error=Python package 'requests' is not installed)",
+    "recent trades via ccxt: missing (source=ccxt; endpoint=init; params={}; status_code=None; response_body=; error=Python package 'ccxt' is not installed)",
+    "funding rate via okx_rest: missing (source=okx_rest; endpoint=/api/v5/public/funding-rate; params={'instId': 'HYPE-USDT-SWAP'}; status_code=None; response_body=; error=Python package 'requests' is not installed)",
+    "funding rate via ccxt: missing (source=ccxt; endpoint=init; params={}; status_code=None; response_body=; error=Python package 'ccxt' is not installed)",
+    "open interest via okx_rest: missing (source=okx_rest; endpoint=/api/v5/public/open-interest; params={'instId': 'HYPE-USDT-SWAP'}; status_code=None; response_body=; error=Python package 'requests' is not installed)",
+    "open interest via ccxt: missing (source=ccxt; endpoint=init; params={}; status_code=None; response_body=; error=Python package 'ccxt' is not installed)",
+    "账户数据：缺失，未配置 API Key。",
+    "Liquidation heatmap: missing",
+    "Global CVD: missing",
+    "Cross-exchange long/short ratio: missing",
+    "External liquidation map: missing"
+  ]
+}
